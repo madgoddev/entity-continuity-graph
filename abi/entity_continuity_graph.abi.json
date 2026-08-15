@@ -1,0 +1,229 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "get_checkpoint": {
+      "params": [
+        [
+          "observation_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_latest_checkpoint": {
+      "params": [
+        [
+          "pair_address",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_observation": {
+      "params": [
+        [
+          "observation_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_observation_id_at": {
+      "params": [
+        [
+          "index",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_pair_history": {
+      "params": [
+        [
+          "pair_address",
+          "string"
+        ],
+        [
+          "start",
+          "int"
+        ],
+        [
+          "limit",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": [
+        {
+          "$rep": {
+            "$dict": "any"
+          }
+        }
+      ]
+    },
+    "get_superseding_observation_id": {
+      "params": [
+        [
+          "observation_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "has_observation": {
+      "params": [
+        [
+          "observation_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "bool"
+    },
+    "limits": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "int"
+      }
+    },
+    "matches_checkpoint": {
+      "params": [
+        [
+          "observation_id",
+          "string"
+        ],
+        [
+          "expected_result_fingerprint",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "bool"
+    },
+    "observation_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "observe": {
+      "params": [
+        [
+          "graph_scope",
+          "string"
+        ],
+        [
+          "subject_a_json",
+          "string"
+        ],
+        [
+          "subject_b_json",
+          "string"
+        ],
+        [
+          "observed_on",
+          "string"
+        ],
+        [
+          "question_context",
+          "string"
+        ],
+        [
+          "evidence_bundle_json",
+          "string"
+        ],
+        [
+          "supersedes_observation_id",
+          "string"
+        ],
+        [
+          "correction_reason",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "policy": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "preview_addresses": {
+      "params": [
+        [
+          "graph_scope",
+          "string"
+        ],
+        [
+          "subject_a_json",
+          "string"
+        ],
+        [
+          "subject_b_json",
+          "string"
+        ],
+        [
+          "observed_on",
+          "string"
+        ],
+        [
+          "question_context",
+          "string"
+        ],
+        [
+          "evidence_bundle_json",
+          "string"
+        ],
+        [
+          "supersedes_observation_id",
+          "string"
+        ],
+        [
+          "correction_reason",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "string"
+      }
+    },
+    "version": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    }
+  }
+}

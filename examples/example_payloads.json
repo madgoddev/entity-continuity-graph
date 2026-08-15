@@ -1,0 +1,46 @@
+{
+  "graph_scope": "public-org-continuity-v4",
+  "subject_a": {
+    "display_label": "Northwind Research Association",
+    "jurisdiction_hint": "Exampleland",
+    "public_identifier_hint": "public register reference NRA-041",
+    "descriptor_note": "Descriptor used in records published before the reorganization"
+  },
+  "subject_b": {
+    "display_label": "Northwind Research Foundation",
+    "jurisdiction_hint": "Exampleland",
+    "public_identifier_hint": "public register reference NRF-208",
+    "descriptor_note": "Descriptor used after the announced transfer"
+  },
+  "observed_on": "2026-08-12",
+  "question_context": "Classify organizational continuity for public research-grant attribution only.",
+  "supersedes_observation_id": "ROOT",
+  "correction_reason": "",
+  "evidence_bundle": {
+    "bundle_version": "ECG-EVIDENCE-1",
+    "public_only": true,
+    "privacy_attestation": "NO_PRIVATE_OR_CONFIDENTIAL_DATA",
+    "documents": [
+      {
+        "document_id": "notice-1",
+        "provenance_label": "ORGANIZATION_PUBLIC_STATEMENT",
+        "capture_method": "DIRECT_PUBLIC_TEXT",
+        "source_title": "Reorganization notice",
+        "source_locator": "https://public.example/reorganization-notice",
+        "publisher_label": "Northwind Research Association",
+        "published_on": "2026-05-02",
+        "excerpt": "The association states that its programs and staff will transfer to the newly formed foundation on 1 June, while the association will then wind down."
+      },
+      {
+        "document_id": "filing-2",
+        "provenance_label": "PUBLIC_AUTHORITY_RECORD",
+        "capture_method": "CALLER_TRANSCRIPTION",
+        "source_title": "Public registration summary",
+        "source_locator": "Exampleland register, public record NRF-208",
+        "publisher_label": "Exampleland Public Organizations Register",
+        "published_on": "2026-06-03",
+        "excerpt": "The public summary describes the foundation as receiving the predecessor association's active programs under the reorganization plan."
+      }
+    ]
+  }
+}

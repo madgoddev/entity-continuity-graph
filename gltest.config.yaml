@@ -1,0 +1,12 @@
+networks:
+  default: localnet
+  localnet:
+    url: http://127.0.0.1:4000/api
+    chain_type: localnet
+    leader_only: false
+    default_wait_interval: 50
+    default_wait_retries: 200
+
+paths:
+  contracts: contracts
+  artifacts: .gltest_cache

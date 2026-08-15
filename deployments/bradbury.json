@@ -1,0 +1,102 @@
+{
+  "evidenceSchema": "entitycontinuitygraph/deployment-evidence/v4",
+  "networkAlias": "testnet-bradbury",
+  "networkName": "GenLayer Bradbury Testnet",
+  "chainId": 4221,
+  "rpcUrl": "https://rpc-bradbury.genlayer.com",
+  "explorerBaseUrl": "https://explorer-bradbury.genlayer.com",
+  "cliVersion": "0.39.2",
+  "deployerAddress": "0xf6977164ae9efe2c4eed79b1d9bbd38e2e6b4331",
+  "contractAddress": "0xe1e670607C75F8d5aB531DFB3000fD863Db851F4",
+  "deploymentTransactionHash": "0x0d5994b7a34c4fb6701b22daa31e2eeb3cb445792138fdffe9a60c6bb3094e38",
+  "deployedAtUtc": "2026-08-12T16:54:05Z",
+  "deploymentLifecycleStatus": "FINALIZED",
+  "deploymentConsensusResult": "AGREE",
+  "deploymentExecutionResult": "FINISHED_WITH_RETURN",
+  "deploymentValidatorVotes": {
+    "agree": 5,
+    "disagree": 0,
+    "timeout": 0
+  },
+  "contractSourceSha256": "0CED2851AEB13E3041D8989ADB30AB16F69D51BA34988CF5D0427EFF1ACDA952",
+  "deployedSourceSha256": "0CED2851AEB13E3041D8989ADB30AB16F69D51BA34988CF5D0427EFF1ACDA952",
+  "deployedSourceBytes": 30964,
+  "deployedSourceMatchesLocal": true,
+  "genvmDependency": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "schema": {
+    "publicMethodCount": 14,
+    "viewMethodCount": 13,
+    "writeMethodCount": 1,
+    "constructorParameterCount": 0,
+    "abiSha256": "DE015B872811DCFF3E7F2BD0598EEB44FF547E7FA0E582B7E15DAE2C17D38009",
+    "verified": true
+  },
+  "protocolRead": {
+    "schemaVersion": "ENTITY_CONTINUITY_GRAPH/4.0",
+    "policyVersion": "ECG-RELATIONSHIP-POLICY/4",
+    "identityDomainVersion": "ECG-CONTENT-ADDRESS/4",
+    "consensusEquivalence": "Exact independently produced relationship and succession direction",
+    "validatorLlmCallsPerAttempt": 1,
+    "storesModelAuthoredAncillaryMetadata": false,
+    "evidenceAuthenticityChecked": false,
+    "fetchesUrls": false,
+    "latestPointerAuthoritative": false,
+    "privateOrConfidentialDataAllowed": false
+  },
+  "limitsRead": {
+    "maximumDocuments": 6,
+    "maximumEntityJsonCharacters": 1400,
+    "maximumEvidenceJsonCharacters": 24000,
+    "maximumExcerptCharactersPerDocument": 2200,
+    "maximumHistoryPage": 20,
+    "maximumJsonNesting": 8,
+    "maximumTotalExcerptCharacters": 9000,
+    "maximumCorrectionReasonCharacters": 400
+  },
+  "smokeTest": {
+    "fixture": "examples/example_payloads.json",
+    "fixtureFileSha256": "DC2B1D68245B13628090550CD1722EFDF9F4D780827AE7C5479ACF7A276AA1ED",
+    "transactionHash": "0x4c75735f10618c7772b067a748076a26b34a4f45eec80c9602ffc9e8f53d987b",
+    "submittedAtUtc": "2026-08-12T17:25:22.102Z",
+    "chainCreatedAtUtc": "2026-08-12T17:25:23Z",
+    "lifecycleStatus": "FINALIZED",
+    "consensusResult": "AGREE",
+    "executionResult": "FINISHED_WITH_RETURN",
+    "validatorVotes": {
+      "agree": 4,
+      "disagree": 0,
+      "timeout": 1
+    },
+    "observationId": "urn:ecg4:observation:sha256:f6e27b29b7768577903c0a496b96998883de2b4ee8770e4452c6b3bbfd279a52",
+    "pairAddress": "urn:ecg4:pair:sha256:641f5ee4946ef9469990cb2a7b2b74fb946035f4aa53bd6c8341cd9b7ce43bb7",
+    "evidenceAddress": "urn:ecg4:evidence:sha256:9208f411998be968edd21a6634927c553095993d33a64984a34a6b742fde31a8",
+    "subjectAAddress": "urn:ecg4:entity:sha256:cf1268e673ca85ce4cc0a57b7252aabcc484c1c8c81a2eb539751c4e977aacca",
+    "subjectBAddress": "urn:ecg4:entity:sha256:38f2c0fd9f8b3ebb4f69d48107ec985b4a0f73d80e2fe26f678a2c72f59021e8",
+    "resultFingerprint": "urn:ecg4:result:sha256:3ababff70922b77e1a19aacdbfa2e618b22977d64b0d90d8b24b58d86a2fbc21",
+    "claimCode": "SUCCESSOR:A_TO_B",
+    "relationship": "SUCCESSOR",
+    "successionDirection": "A_TO_B",
+    "decisive": true,
+    "observationCountAfterRead": 1,
+    "pairHistoryCountAfterRead": 1,
+    "catalogIndex": 0,
+    "supersedingObservationId": "",
+    "matchesCheckpointRead": true,
+    "alteredCheckpointRead": false,
+    "unknownCheckpointRead": false,
+    "readbackVerified": true
+  },
+  "diagnosticV3BradburySmokes": [
+    {
+      "transactionHash": "0xd8056970c1e7ee2ae398a8f7a5251ddfb1b2fbf6015337fa7c5b8883e8e5380c",
+      "outcome": "FINALIZED_DISAGREE_NO_STATE",
+      "releaseEligible": false
+    },
+    {
+      "transactionHash": "0x20e9a3cbca60ceef6a31760b2aac92c1bae7d52dfe6d9c24dd1ce07a1de6906d",
+      "outcome": "FINALIZED_DISAGREE_NO_STATE",
+      "releaseEligible": false
+    }
+  ],
+  "verifiedAtUtc": "2026-08-12T17:56:49.759Z"
+}
